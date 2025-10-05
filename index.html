@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Registration Form</title>
+</head>
+<body>
+    <header><h1>Registration Form</h1></header>
+    <main>
+        <form action="#" method="post">
+            <fieldset>
+              <legend><h3>Personal Infomation</h3></legend>
+              <label for="name">Full Name:</label>
+              <input type="text" id="name" name="name" required><br><br>
+
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required><br><br>
+
+              <label for="phone">Phone:</label>
+              <input type="tel" id="tel" name="phone" pattern="^\+?[0-9]{10,15}" required>
+<br><br>
+              <label for="password">password:</label>
+              <input type="password" style="showpassword">
+            </fieldset>
+            <fieldset>
+                <legend><h3>Prefrences</h3></legend>
+                  <p>Gender:</p>
+                  <label for="male">Male</label>
+                  <input type="radio" id="male" name="gender" value="male"><br>
+                  
+                  <label for="female">Female</label>
+                  <input type="radio" id="female" name="gender" value="female">
+
+                  <p>Intrests:</p>
+                  <label for="music">Music:</label>
+                  <input type="checkbox" id="music" name="intrests" value="music"><br><br>
+
+                  <label for="coding">Coding:</label>
+                  <input type="checkbox" id="coding" name="intrests" value="coding">
+            </fieldset>
+            <fieldset>
+                <legend>Other</legend>
+                <label for="message">About yourself:</label><br>
+                <textarea id="message" name="message" rows="4" col="40"></textarea><br>
+            
+            </fieldset><br><br>
+
+            <button type="submit">Submit</button><br>
+            <button type="reset">Reset</button>
+        </form>
+    </main>
+</body>
+</html>
